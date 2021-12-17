@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Semantic segmentation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.7.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+     
+      <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+        <h4>Laila SABAR, University Of Paris.</h4>
+        <p class="mb-0">lailasb2@gmail.com</p>
+      </div>
+      </a>
+    </div>
+  </nav>
+
+
+  
+
+  <main id="main">
+
+    <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>Learning deep structured active contours end-to-end.</h2>
+            <br>
+            <p class="mb-0">This website present the results of implementing the paper "Learning deep structured active contours end-to-end" <br> This paper is done by Diego Marcos, Devis Tuia, Benjamin Kellenberger
+              from University of Wageningen, Netherlands and Lisa Zhang, Min Bai, Renjie Liao, Raquel Urtasun
+              from University of Toronto, Canada</p>
+          </div>
+          <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
+            <div id="filters" class="filters">
+              <a href="#" data-filter=".res" class="active">Results</a>
+              
+            </div>
+          </div>
+        </div>
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item res col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Show Details</h3>
+                <span>input image</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img1.png">
+            </a>
+          </div>
+          <div class="item res col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single2.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Show Details</h3>
+                <span>data term</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img2.png">
+            </a>
+          </div>
+          <div class="item res col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single3.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Show Details</h3>
+                <span>elasticity term</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img3.png">
+            </a>
+          </div>
+          <div class="item res col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single4.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Show Details</h3>
+                <span>smoothness term</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img4.png">
+            </a>
+          </div>
+          <div class="item res col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single5.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Show Details</h3>
+                <span>balloon term</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img5.png">
+            </a>
+          </div>
+
+          
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+<!-- ======= Description Section ======= -->
+
+<div class="container">
+  <div class="row justify-content-center text-center mb-4">
+    <div class="col-10">
+      <h3 class="h3 heading">Description</h3>
+      <br>
+      <br>
+      <p>The objective of this work is to detect the contours of buildings using the model DSAC  (Deeep structured active contour), the model is trained on Vaihingen buildings dataset,  it consists of 168 buildings extracted from the training set of the ISPRS “2D semantic labeling contest”, 100 buildings are used to train the models and the remaining 68 as a test set. <br>
+
+        The images shown above are the results of contour delineating with manual initialization, that means the user have to click on the center of the building in order to generate contour. <br>
+        
+        The initial contour is in blue, the result in yellow, and the ground truth in green. With the data term we can observe regions of lower energy along the boundary of the building. The balloon term has learned to produce positive values only inside the building, especially next to corners. The smoothness term penalize the curative that are far from the building’s corners. The elasticity term provided by the model in this example was α(x) = 0.74. <br>
+
+        The value of Intersection over union in this test example is  IoU = 0.63.
+        <br>
+          <br>
+          <br>
+          <br>
+        </p>
+    </div>
+
+  </div>
+</div>
+
+    <!-- ======= Architecture Section ======= -->
+
+    <div class="container">
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-10">
+          <h3 class="h3 heading">DSAC Architecture</h3>
+
+          <img  src="assets/img/img10.png" height="452" width="470" >
+          <br>
+          <br>
+          <p>The CNN predicts the values of the energy
+            terms to be used by the active contour model (ACM): a global α
+            for the length penalization and maps for local D, the data term,
+            β, the curvature penalization and κ, the balloon term. <br>After ACM
+            inference, a structured loss is computed and given to the CNN,
+            whose parameters can then be updated using backpropagation.
+            </p>
+        </div>
+
+      </div>
+    </div>
+
+    
+
+
+    <!-- ======= Services Section ======= -->
+    <section class="section services">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-8 p-3 mb-2 bg-light text-dark">
+            <h3 class="h3 heading">Conclusion</h3>
+            <br>
+            <br>
+            <p >Results show that model DSAC which combines extraction capabilities of CNNs with the high-level constraints provided by ACMs is a promising path for instance segmentation when we have geometric priors like buildings.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section><!-- End Services Section -->
+
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://www.linkedin.com/in/lailasabar/"><span class="bi bi-linkedin"></span></a>
+          <a href="https://medium.com/@laila.sabar"><span class="bi bi-medium"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
